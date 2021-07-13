@@ -1,0 +1,46 @@
+.heading{
+    font-size: 25px;
+    width: 300px;
+}
+body{
+    background-color: dimgrey;
+    color: black;
+}
+.nameofobjects{
+    font-size: 20px;
+}
+#camera{
+    border:5px inset blanchedalmond;
+    width: 350px;
+    height: 350px;
+}
+.button{
+    background-color: blanchedalmond;
+    color: black;
+}
+/* The animation code */
+@keyframes example {
+    0%   {background-color: black;}
+    25%  {background-color: grey;}
+    50%  {background-color: burlywood;}
+    100% {background-color: white;}
+  }
+  
+  /* The element to apply the animation to */
+ #camera{
+    position: relative;
+    background-color: whitesmoke;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  #camera_div{
+      float: left;
+      margin-right: 50px;
+      margin-left: 190px;
+  }
+  #result_div{
+      float: left;
+      margin-left: 50px;
+      margin-bottom: 20px;
+  }
